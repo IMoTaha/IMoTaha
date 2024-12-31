@@ -283,12 +283,12 @@ const authenticatedUsers = [
 const user = localStorage.getItem('user');
 if (!user) {
   // Redirect to login page if user is not authenticated
-  window.location.href = 'https://motaha.net/login';
+  window.location.href = 'https://imotaha.github.io/IMoTaha/login';
 } else {
   const userData = JSON.parse(user);
   const authenticatedUser = authenticatedUsers.find((u) => u.email === userData.email && u.password === userData.password);
   if (!authenticatedUser) {
     // Redirect to login page if authentication fails
-    window.location.href = 'https://motaha.net/login';
+    window.location.href = 'https://imotaha.github.io/IMoTaha/login';
   }
 }
